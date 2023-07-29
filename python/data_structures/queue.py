@@ -1,0 +1,20 @@
+""" queue = ["particles", "molecuar", "sick"]
+queue.remove("particles")
+
+print(queue)
+
+ """
+
+from collections import deque
+
+queue = deque([])
+queue.append(1)
+queue.append(2)
+queue.append(3)
+
+queue.popleft()
+
+print(queue)
+
+if not queue:
+    print("empty")
