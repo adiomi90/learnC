@@ -1,0 +1,1 @@
+print(shuffle(list(password)))
