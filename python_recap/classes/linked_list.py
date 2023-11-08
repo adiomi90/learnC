@@ -34,11 +34,11 @@ class Node:
 
 class SinglyLinkedList:
     def __init__(self):
-        self.__head = None
+        self.head = None
 
     def sorted_insert(self, value):
         new_node = Node(value)
-        if self.__head is None:
+        if self.head is None:
             self.__head = new_node
         elif value < self.head.data:
             new_node.__next_node = self.__head
